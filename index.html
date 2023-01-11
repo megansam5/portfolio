@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="top-align">
+          <img src="images/logo.jpg" class="logo" />
+          <nav>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <img
+                src="images/close-removebg-preview.png"
+                onclick="closemenu()"
+              />
+            </ul>
+            <img src="images/menuicon.png" onclick="openmenu()" class="close" />
+          </nav>
+        </div>
+        <div class="header-text">
+          <p>Amature coder</p>
+          <h1>
+            Hi, I'm <span>Megan Lester </span> <br />and I'm teaching myself
+            <br />to code
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------------about section ------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/MeganLester.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm a 2nd year Biochemistry student at the University of Bristol
+              and I have found a love of coding. Through online tutorials and
+              courses, I have managed to teach myself JavaScript, HTML, CSS, and
+              aspects of Python and C#. Backend development especially interests
+              me and I would love to pursue a career in software development or
+              engineering.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>JavaScript</span><br />
+                  Back and Front-end
+                </li>
+                <li><span>Python</span> <br />Data analysis</li>
+                <li>
+                  <span>C#</span><br />
+                  Basic concepts
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Novemner 2022</span><br />
+                  Javascript Data structures and algorithms course on
+                  FreeCodeCamp
+                </li>
+                <li>
+                  <span>Febuary 2019</span> <br />Work experience at Liverpool
+                  University Biology Lab
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-present</span><br />
+                  77% in first year of BSci Biochemisty from University of
+                  Bristol
+                </li>
+                <li>
+                  <span>2021</span> <br />A* in Math, Biology and Chemistry and
+                  A in Further Maths from Sir John Deane's Sixth Form College
+                </li>
+                <li>
+                  <span>2019</span><br />
+                  9 GCSEs in grade 9-8, including 9 in Maths and English from
+                  Tarporley High School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------services-------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <img src="images/fronticonn.png" />
+            <h2>Front-end</h2>
+            <p>A mixture of HTML, CSS and JavaScript.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <img src="images/backiconn.png" />
+            <h2>Back-end</h2>
+            <p>
+              Mainly JavaScript so far, some Python in a data analysis
+              standpoint, and a bit of C#
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <img src="images/appiconn.png" />
+            <h2>Applications</h2>
+            <p>
+              Web applications with C# and moblie applications with react.js
+              native.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------portfolio------------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/weatherapp.jpg" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                A JavaScript application that shows you what town you are in,
+                the weather description, an icon according to the weather, and
+                the temperature. When you click on the temperature it changes to
+                what the temperature feels like.
+              </p>
+              <a href="#"><img src="images/images-removebg-preview.png" /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/noteapp.jpg" />
+            <div class="layer">
+              <h3>Notes App</h3>
+              <p>
+                A C# application that allows you to add, edit, and remove notes.
+                For each not you give it a title and a description.
+              </p>
+              <a href="#"><img src="images/images-removebg-preview.png" /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/pingpongapp.jpg" />
+            <div class="layer">
+              <h3>Ping Pong App</h3>
+              <p>
+                A JavaScript application that allows you to play a ping point
+                game against the computer. The paddle follows the players mouse
+                and as the time goes on, the ball speeds up and the background
+                slowly changes colour. There is also a point system.
+              </p>
+              <a href="#"><img src="images/images-removebg-preview.png" /></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See More</a>
+      </div>
+    </div>
+    <!--------------------contact-------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>megansaml@btinternet.com</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/megan-lester-480aba255"
+                ><img src="images/linkedinicon.png"
+              /></a>
+              <a href="https://www.instagram.com/megan.lesterr/"
+                ><img src="images/InstagramIcon.png"
+              /></a>
+            </div>
+            <a href="images/Megan Lester CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Made by Megan Lester</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
